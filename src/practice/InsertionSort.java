@@ -36,20 +36,20 @@ public class InsertionSort {
 
     }
 
-    public static int insertSort(int a[]){
-        int n=a.length;
+    public static int insertSort(int b[]){
+        int n=b.length;
         int t=0,j;
-        int count=0;
+        int c=0;
         for(int i=1;i<n;i++){
-            int key=a[i];
-            for( j=i-1;j>=0&&(key<a[j]);j--){
-                   a[j+1]=a[j];
-                   count++;
+            int key=b[i];
+            for( j=i-1;j>=0&&(key<b[j]);j--){
+                   b[j+1]=b[j];
+                   c++;
             }
-            a[j+1]=key;
+            b[j+1]=key;
 
         }
-        return count;
+        return c;
     }
 
     public static void insertionSortWhile(int array[]) {
